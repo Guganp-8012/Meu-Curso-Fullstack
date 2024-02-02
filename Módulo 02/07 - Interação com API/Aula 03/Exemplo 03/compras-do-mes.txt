@@ -1,0 +1,8 @@
+Desodorante
+Sabonete
+Amaciante
+Arroz
+Feijão
+Açaí
+Carne
+[...]
