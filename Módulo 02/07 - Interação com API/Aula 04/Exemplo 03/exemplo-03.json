@@ -8,44 +8,57 @@
 
     {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-        "nome": "Nome 1",
-        "descricao": "Descrição 1",
-        "preco": 0
+        "nome": "Minecraft",
+        "descricao": "Aventure-se nesse sand-box formado por quadrados! Construa coisas com blocos, em um mundo virtual aberto e livre para explorar",
+        "preco": 148.25
     },
 
     {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-        "nome": "Nome 2",
-        "descricao": "Descrição 2",
-        "preco": 0
+        "nome": "Plants vs Zombies",
+        "descricao": "Os zumbis estão invadindo sua casa e a única defesa é o seu arsenal de plantas! Armado com um viveiro alienígena de plantas, você precisará pensar rápido e plantar mais rápido ainda para se defender desses zumbis",
+        "preco":  9.90
     },
 
     {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-        "nome": "Nome 3",
-        "descricao": "Descrição 3",
-        "preco": 0
+        "nome": "Among Us",
+        "descricao": "Um jogo de trabalho em equipe e trairagem online ou em rede local para 4 a 15 jogadores... no espaço!",
+        "preco": 14.99
     },
 
     {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-        "nome": "Nome 4",
-        "descricao": "Descrição 4",
-        "preco": 0
+        "nome": "Five Nigth at Freddy's",
+        "descricao": "Bem-vindo ao seu novo emprego na Freddy Fazbear's Pizza, onde crianças e pais vêm em busca de entretenimento e comida! A   atração principal são robôs animatrônicos, programados para agradar multidões!",
+        "preco": 10.89
     },
 
     {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-        "nome": "Nome 5",
-        "descricao": "Descrição 5",
-        "preco": 0
+        "nome": "Call of Duty",
+        "descricao": "Envolve os jogadores num conflito global sem precedentes e marca o retorno dos emblemáticos Operacionais da Task Force 141",
+        "preco": 209.30
     },
 
     {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-        "nome": "Nome 6",
-        "descricao": "Descrição 6",
-        "preco": 0
+        "nome": "Celeste",
+        "descricao": "Ajude Madeline a enfrentar seus demônios internos em sua jornada até o topo da Montanha Celeste, nesse jogo de plataforma super afiado. Desbrave desafios meticulosos, descubra os segredos e mistérios da montanha.",
+        "preco": 59.99
+    },
+
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "nome": "A Lenda do Héroi",
+        "descricao": "Aventure-se no mundo do Herói em pixel art no qual as ações do jogador são cantadas de forma cômica e dinâmica, nesse jogo de plataforma e muita aventura! ",
+        "preco": 29.99
+    },
+
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "nome": "Castle Crashers",
+        "descricao": "Hackeie, corte e destrua seu caminho para a vitória nesta premiada aventura arcade 2D do The Behemoth!",
+        "preco": 24.99
     }
-
 ]

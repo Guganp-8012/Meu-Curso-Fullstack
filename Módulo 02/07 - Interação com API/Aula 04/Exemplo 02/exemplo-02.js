@@ -7,35 +7,30 @@ async function buscar(){
     for (let produto in produtos)
     document.body.innerHTML += `
         <div class="card_produto">
-            <img src="${produtos[produto].img}" width="auto" height="250px">
+            <img src="${produtos[produto].img}" width="auto" height="320px">
 
             <h3>
             ${produtos[produto].nome}
             </h3>
-            
-            <br>
 
-            <span>
+            <p>
             ${produtos[produto].descricao}
-            </span>
+            </p>
 
-            <br>
-
-            <h4>
+            <div class="valores">
+                <h4>
                 R$${produtos[produto].valorComDesconto}
+                </h4>
 
-                <s class="sem_desconto_id">
+                <s>
                 R$${produtos[produto].valorSemDesconto}
                 </s>
-            </h4>
-
-            <br>
+            </div>
 
             <p>
             ${produtos[produto].tipoEntrega}
             </p>
         </div>
-        <br>
         `
 }
 
