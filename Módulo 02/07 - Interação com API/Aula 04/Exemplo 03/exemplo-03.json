@@ -1,0 +1,51 @@
+[
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "nome": "Terraria",
+        "descricao": "Cave, lute, explore, construa! Nada é impossível neste jogo de aventura cheio de ação.",
+        "preco": 32.99
+    },
+
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "nome": "Nome 1",
+        "descricao": "Descrição 1",
+        "preco": 0
+    },
+
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "nome": "Nome 2",
+        "descricao": "Descrição 2",
+        "preco": 0
+    },
+
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "nome": "Nome 3",
+        "descricao": "Descrição 3",
+        "preco": 0
+    },
+
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "nome": "Nome 4",
+        "descricao": "Descrição 4",
+        "preco": 0
+    },
+
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "nome": "Nome 5",
+        "descricao": "Descrição 5",
+        "preco": 0
+    },
+
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "nome": "Nome 6",
+        "descricao": "Descrição 6",
+        "preco": 0
+    }
+
+]

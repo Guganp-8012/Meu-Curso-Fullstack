@@ -3,6 +3,7 @@ let urlProdutos = "https://raw.githubusercontent.com/Guganp-8012/Meu-Curso-Fulls
 async function buscar(){
     let resposta = await fetch(urlProdutos)
     let produtos = await resposta.json()
+
     for (let produto in produtos)
     document.body.innerHTML += `
         <div class="card_produto">
@@ -14,17 +15,17 @@ async function buscar(){
             
             <br>
 
-            <s>
+            <span>
             ${produtos[produto].descricao}
-            </s>
+            </span>
 
             <br>
 
             <h4>
-                ${produtos[produto].valorComDesconto}
+                R$${produtos[produto].valorComDesconto}
 
                 <s class="sem_desconto_id">
-                ${produtos[produto].valorSemDesconto}
+                R$${produtos[produto].valorSemDesconto}
                 </s>
             </h4>
 
