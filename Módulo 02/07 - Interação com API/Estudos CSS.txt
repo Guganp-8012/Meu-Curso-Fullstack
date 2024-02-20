@@ -1,0 +1,11 @@
+Tipos de Espaçamento (sentido horário/cima-direita-baixo-esquerda)
+margin = define um espaço entre a borda e elementos externos
+padding = define o espaçamento entre o conteúdo e a borda de um elemento HTML
+gap
+line-height
+
+Tipos de alinhamento
+
+Alteração de cores
+
+Arteração largura/altura
