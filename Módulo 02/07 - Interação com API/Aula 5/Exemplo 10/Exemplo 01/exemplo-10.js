@@ -5,30 +5,33 @@ async function busca(){
   let listaDiv = document.getElementById("lista-card")
   
   for (let produto of produtos)
-  document.body.innerHTML += `
+  listaDiv.innerHTML += `
     <div class="card">
-      <img src="${produto.img}" alt="Não renderizou" width="auto" height="150">
-      
-      <p class="titulo">
-        ${produto.nome}
-      </p>
+      <div class="grupo-img">
+        <img src="${produto.img}" alt="Não renderizou" width="auto" height="auto">
+      </div>
 
-      <p>
-        ${produto.descricao}
-      </p>
+      <div class="textos">
+        <h3>
+          ${produto.nome}
+        </h3>
 
-      <div class="valores">
-        <span class="valorCom">
-          R$ ${(produto.valorComDesconto).toFixed(2).replace(".", ",")}
-        </span>
+        <p>
+          ${produto.descricao}
+        </p>
 
-        <span class="valorSem">
-          R$ ${(produto.valorSemDesconto).toFixed(2).replace(".", ",")}
-        </span>
+        <div>
+          <span class="comDesconto">
+            R$ ${(produto.valorComDesconto).toFixed(2).replace(".", ",")}
+          </span>
+
+          <span class="semDesconto">
+            R$ ${(produto.valorSemDesconto).toFixed(2).replace(".", ",")}
+          </span>
+        </div>
       </div>
     </div>
   `
 }
-
 
 busca()

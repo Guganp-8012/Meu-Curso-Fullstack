@@ -1,4 +1,68 @@
-Tipos de Espaçamento (sentido horário/cima-direita-baixo-esquerda)
+Background:
+background
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Como "chamar" um elemento html:
+pelo nome do elemento como "body"
+mas caso seja um elemento personalizado dev se chamar por class ou id
+pode se selecionar mais de um elemento por vez, separando por vírgula
+* afeta todo o html
+
+Medidas de proporção(?)
+px, re, etc
+
+valores de cores
+nome da cor / rgb / rgb-a, hex, hsl / hsl-a
+
+
+Ordem de prioridade de sentido (?) => (sentido horário/cima-direita-baixo-esquerda)
+
+Tipos de Espaçamento 
 margin = define um espaço entre a borda e elementos externos
 padding = define o espaçamento entre o conteúdo e a borda de um elemento HTML
 gap
@@ -9,3 +73,21 @@ Tipos de alinhamento
 Alteração de cores
 
 Arteração largura/altura
+
+
+
+text-align
+color
+
+text
+border
+border-style (
+dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden
+)
+border-width
+border-color
+
+opacity (0-1) (feito com rgb-a tbm)
+
+
+offset-x / offset-y / blur-radius / color
