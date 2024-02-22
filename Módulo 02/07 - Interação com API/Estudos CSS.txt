@@ -1,12 +1,47 @@
-Background:
-background
-background-color
-background-image
-background-repeat
-background-attachment
-background-position
+Propiedades abreviadas ajudam a encurtar o código [...](?)
+
+Background (plano de fundo do elemento):
+
+background-color - Define a cor de fundo de um elemento
+
+background-image - Define a imagem de fundo de um elemento
+A imagem de fundo também pode ser definida para elementos específicos como <p>
+
+background-repeat - Define como uma imagem de fundo será repetida
+Por padrão a imagem de fundo já é repetida tanto na horizontal quanto na vertical
+A imagem de fundo só pode ser repetida na vertical e na horizontal
+no-repeat - Define para que a imagem seja repetida uma única vez
+
+background-position - Define a posição inicial de uma imagem de fundo
+ex.: background-position: right top;
+
+background-attachment - Define se uma imagem de fundo é fixa ou acompanha o resto da página conforme seja rolada
+fixed/scroll
+
+background (propriedade abreviada) - Define todas as propriedades de background em uma declaração
+ex.: background: #ffffff url("img_tree.png") no-repeat right top;
 
 
+Borders (bordas):
+As propriedades da borda CSS permitem especificar o estilo, a largura e a cor da borda de um elemento.
+
+border-style - específica qual tipo de borda vai ser exibida
+dotted - pontilhada
+dashed - tracejada
+solid - sólido
+double - dobrada
+groove - ranhurada/entalhada (um tipo de borda 3D, o efeito depende do valor da cor da borda)
+ridge - estriada (um tipo de borda 3D, o efeito depende do valor da cor da borda)
+inset - inserida (um tipo de borda 3D, o efeito depende do valor da cor da borda)
+outset - inicial (um tipo de borda 3D, o efeito depende do valor da cor da borda)
+none - sem bordas/nenhuma
+hidden - oculta/escondida
+
+Também é possível definir mais de um tipo de borda ao mesmo tempo, "misturando-as"
+ex.: border-style: dotted dashed solid double
+
+border-width - específica a largura/grossura das bordas
+*você também pode definir um valor personalidado para cada borda se preferir
 
 
 
