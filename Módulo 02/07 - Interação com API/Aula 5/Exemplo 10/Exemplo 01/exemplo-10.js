@@ -12,13 +12,9 @@ async function busca(){
       </div>
 
       <div class="textos">
-        <h3>
-          ${produto.nome}
-        </h3>
+        <h3>${produto.nome}</h3>
 
-        <p>
-          ${produto.descricao}
-        </p>
+        <p>${produto.descricao}</p>
 
         <div>
           <span class="comDesconto">
