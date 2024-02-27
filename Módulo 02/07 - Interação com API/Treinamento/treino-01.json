@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "img": "https://imgs.casasbahia.com.br/1562821982/1xg.jpg?imwidth=500",
     "nome": "Bicicleta Aro 26 DP 21 Marchas Colli",
     "descricao": "Uma bicicleta ótima para se exercitar",
@@ -9,7 +8,6 @@
   },
 
   {
-    "id": 2,
     "img": "https://imgs.casasbahia.com.br/55049120/1g.jpg?imwidth=500",
     "nome": "Impressora Epson EcoTank L121",
     "descricao": "Uma impressora eficiente e supereconômica",
@@ -18,7 +16,6 @@
   },
 
   {
-    "id": 3,
     "img": "https://imgs.casasbahia.com.br/13824281/2xg.jpg?imwidth=500",
     "nome": "Piscina Estrutural 6,5 Litros",
     "descricao": "Uma piscina para se refrescar com a família",
@@ -27,7 +24,6 @@
   },
 
   {
-    "id": 4,
     "img": "https://images-americanas.b2w.io/produtos/01/00/img/29253510/9/2925351013_1SZ.jpg",
     "nome": "Ovo de Páscoa Kinder",
     "descricao": "Um ovo delicioso de páscoa",
@@ -36,7 +32,6 @@
   },
 
   {
-    "id": 5,
     "img": "https://imgs.casasbahia.com.br/55029985/1xg.jpg?imwidth=500",
     "nome": "Ventilador de Mesa Mondial",
     "descricao": "Um ótimo ventilador de 6 pás",
@@ -45,7 +40,6 @@
   },
 
   {
-    "id": 6,
     "img": "https://m.media-amazon.com/images/I/61AvB90Sd-L._AC_SL1000_.jpg",
     "nome": "Box Pokémon Escarlate E Violeta Obsidiana Em Chamas",
     "descricao": "Uma caixa de cartas TCG ilustradas de pokémon",
@@ -54,7 +48,6 @@
   },
 
   {
-    "id": 7,
     "img": "https://cdn.awsli.com.br/2500x2500/1258/1258259/produto/114293492/ps5-fat-branco-699n7j92o9.png",
     "nome": "Console PlayStation 5",
     "descricao": "Divirta-se jogando com esse incrível console",
@@ -63,7 +56,6 @@
   },
 
   {
-    "id": 8,
     "img": "https://imgs.casasbahia.com.br/55011885/1g.jpg",
     "nome": "Panela Elétrica de Arroz Mondial",
     "descricao": "Faça sua comida de maneira prática com essa panela",
@@ -72,7 +64,6 @@
   },
 
   {
-    "id": 9,
     "img": "https://assets.xboxservices.com/assets/fb/d2/fbd2cb56-5c25-414d-9f46-e6a164cdf5be.png?n=XBX_A-BuyBoxBGImage01-D.png",
     "nome": "Console Xbox Series X",
     "descricao": "Divirta-se jogando com esse incrível console",
@@ -81,7 +72,6 @@
   },
 
   {
-    "id": 10,
     "img": "https://m.media-amazon.com/images/I/71HODD5GbdL._SL1000_.jpg",
     "nome": "Diário de um Banana 18: Cabeça oca",
     "descricao": "Veja mais uma das histórias divertidas de Greg Heffley",
@@ -90,7 +80,6 @@
   },
 
   {
-    "id": 11,
     "img": "https://images-americanas.b2w.io/produtos/7200060868/imagens/bola-futebol-campo-oficial-penalty-profissional-s11-r2-xxiii/7200060892_1_large.jpg",
     "nome": "Bola Futebol Penalty Profissional S11 R2 Xxiii",
     "descricao": "Uma bola de futbol para jogar em campo",
@@ -99,7 +88,6 @@
   },
 
   {
-    "id": 12,
     "img": "https://m.media-amazon.com/images/I/41KuE9NipqL._AC_SL1000_.jpg",
     "nome": "Camera de Segurança Wi-Fi 360 Tapo",
     "descricao": "Proteja sua casa, com essa câmera de alta tecnologia",

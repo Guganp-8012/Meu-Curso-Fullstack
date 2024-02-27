@@ -4,9 +4,9 @@ async function busca(){
 
   let listaDiv = document.getElementById("lista-card")
   
-  for (let produto of produtos)
+  for (let produto of produtos){
   listaDiv.innerHTML += `
-    <div class="card">
+    <div class="card" data-id="${produto.id}">
       <div class="grupo-img">
         <img src="${produto.img}" alt="Não renderizou" width="auto" height="auto">
       </div>
@@ -28,6 +28,18 @@ async function busca(){
       </div>
     </div>
   `
+  }
+
+  let elementosCards = document.querySelectorAll(".card")
+  for(let card of elementosCards){
+    card.addEventListener("click", clicou)
+  }
+
 }
 
 busca()
+
+function clicou(){
+  let produtoId = this.getAttribute("data-id")
+  window.location.href = "detahes.html?id=" + produtoId
+}

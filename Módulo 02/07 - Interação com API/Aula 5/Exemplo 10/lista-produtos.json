@@ -1,0 +1,49 @@
+[
+  {
+    "img": "https://imgs.casasbahia.com.br/1562821982/1xg.jpg?imwidth=500",
+    "nome": "Bicicleta Aro 26 DP 21 Marchas Colli",
+    "descricao": "Uma bicicleta ótima para se exercitar",
+    "valorComDesconto": 657.90,
+    "valorSemDesconto": 743.22
+  },
+
+  {
+    "img": "https://imgs.casasbahia.com.br/55049120/1g.jpg?imwidth=500",
+    "nome": "Impressora Epson EcoTank L121",
+    "descricao": "Uma impressora eficiente e supereconômica",
+    "valorComDesconto": 683.10,
+    "valorSemDesconto": 869.00 
+  },
+
+  {
+    "img": "https://imgs.casasbahia.com.br/13824281/2xg.jpg?imwidth=500",
+    "nome": "Piscina Estrutural 6,5 Litros",
+    "descricao": "Uma piscina para se refrescar com a família",
+    "valorComDesconto": 1862.99,
+    "valorSemDesconto": 2069.99
+  },
+
+  {
+    "img": "https://images-americanas.b2w.io/produtos/01/00/img/29253510/9/2925351013_1SZ.jpg",
+    "nome": "Ovo de Páscoa Kinder",
+    "descricao": "Um ovo delicioso de páscoa",
+    "valorComDesconto": 96.00,
+    "valorSemDesconto": 127.30
+  },
+
+  {
+    "img": "https://imgs.casasbahia.com.br/55029985/1xg.jpg?imwidth=500",
+    "nome": "Ventilador de Mesa Mondial",
+    "descricao": "Um ótimo ventilador de 6 pás",
+    "valorComDesconto": 119.90,
+    "valorSemDesconto": 184.90
+  },
+
+  {
+    "img": "https://m.media-amazon.com/images/I/61AvB90Sd-L._AC_SL1000_.jpg",
+    "nome": "Box Pokémon Escarlate E Violeta Obsidiana Em Chamas",
+    "descricao": "Uma caixa de cartas TCG ilustradas de pokémon",
+    "valorComDesconto": 248.90,
+    "valorSemDesconto": 319.99 
+  }
+]
