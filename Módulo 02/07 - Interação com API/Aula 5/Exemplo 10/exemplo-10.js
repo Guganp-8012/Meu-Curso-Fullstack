@@ -31,6 +31,13 @@ async function busca(){
   }
 
   let elementosCards = document.querySelectorAll(".card")
+
+  /*
+  for(let card in elementosCards){
+    elementosCards[card].addEventListener("click", clicou)
+  }
+  */
+
   for(let card of elementosCards){
     card.addEventListener("click", clicou)
   }
@@ -41,5 +48,5 @@ busca()
 
 function clicou(){
   let produtoId = this.getAttribute("data-id")
-  window.location.href = "detahes.html?id=" + produtoId
+  window.location.href = "detahes.html?prod-id=" + produtoId
 }

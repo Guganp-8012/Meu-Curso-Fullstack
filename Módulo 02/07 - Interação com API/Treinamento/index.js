@@ -1,12 +1,12 @@
 async function busca(){
-  let procura = await fetch("treino-01.json")
+  let procura = await fetch("lista-produtos.json")
   let produtos = await procura.json()
 
-  let listaDiv = document.getElementById("listaCard")
+  let listaDiv = document.getElementById("lista-card")
 
   for (let produto of produtos){
     listaDiv.innerHTML += `
-      <div class="card">
+      <div class="card" data-id="${produto.id}">
         <div class="grupo-img">
           <img src="${produto.img}" alt="Não renderizou" width="auto" height="auto">
         </div>
@@ -29,6 +29,17 @@ async function busca(){
     </div>
     `
   }
+
+  let elementosCards = document.querySelectorAll(".card")
+
+  for (let card of elementosCards){
+    card.addEventListener("click", cliqueCard)
+  }
 }
 
 busca()
+
+function cliqueCard(){
+  let elementoID = this.getAttribute("data-id")
+  window.location.href = "detalhes.html?produtoid=" + elementoID
+}
