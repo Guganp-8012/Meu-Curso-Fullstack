@@ -1,0 +1,64 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  background-color: wheat;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela-externa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  width: 550px;
+  height: 340px;
+  border: 20px solid #333;
+}
+
+.tela-interna{
+  background-color: #333;
+  width: 450px;
+  height: 260px;
+}
+
+.controles{
+  display: flex;
+  width: 920px;
+  height: 370px;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.controle-l{
+  background-color: rgb(17, 177, 231);
+  display: flex;
+  height: 370px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px 0px 0px 80px;
+}
+.controle-r{
+  background-color: rgb(208, 27, 27);
+  display: flex;
+  height: 370px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 80px 80px 0px;
+}
+
+.botao-analogico{
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-color: #000;
+}

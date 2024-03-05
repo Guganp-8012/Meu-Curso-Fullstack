@@ -45,3 +45,9 @@
   color: red;
   text-decoration: line-through;
 }
+
+.grupoValores{
+  width: fit-content;
+  display: flex;
+  column-gap: 15px;
+}
