@@ -6,27 +6,27 @@ async function busca(){
 
   for (let produto of produtos){
     listaDiv.innerHTML += `
-      <div class="card" data-id="${produto.id}">
-        <div class="grupo-img">
-          <img src="${produto.img}" alt="não renderizou" width="auto" height="auto">
-        </div>
-        
-        <div class="textos">
-          <h3>${produto.nome}</h3>
-        
-          <p>${produto.descricao}</p>
+    <div class="card" data-id="${produto.id}">
+      <div class="grupo-img">
+        <img src="${produto.img}" alt="não renderizou" width="auto" height="auto">
+      </div>
+      
+      <div class="textos">
+        <h3>${produto.nome}</h3>
+      
+        <p>${produto.descricao}</p>
 
-          <div>
-            <span class="com-desc">
-              R$ ${(produto.valorComDesconto).toFixed(2).replace("." , ",")}
-            </span>
+        <div>
+          <span class="com-desc">
+            R$ ${(produto.valorComDesconto).toFixed(2).replace("." , ",")}
+          </span>
 
-            <span class="sem-desc">
-              R$ ${(produto.valorSemDesconto).toFixed(2).replace("." , ",")}
-            </span>
-          </div>
+          <span class="sem-desc">
+            R$ ${(produto.valorSemDesconto).toFixed(2).replace("." , ",")}
+          </span>
         </div>
-      </div>    
+      </div>
+    </div>    
     `
   }
 

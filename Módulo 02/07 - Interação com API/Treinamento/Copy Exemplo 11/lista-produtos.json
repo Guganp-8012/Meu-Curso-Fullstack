@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "img": "https://m.media-amazon.com/images/I/81sTK4zipDL._AC_SL1500_.jpg",
+    "nome": "Xiaomi Redmi Note 12 5G 128GB 4GB RAM",
+    "descricao": "Um ótimo celular para ligações e jogos",
+    "comDesc": 989.90,
+    "semDesc": 1279.00
+  },
+
+  {
+    "id": 2,
+    "img": "https://a-static.mlcdn.com.br/1500x1500/ar-condicionado-janela-mecanico-springer-midea-7500-frio-110/continentalcenter/010208007010511132/e42482827bb5fc8450c05c566dd1ae8b.jpeg",
+    "nome": "Ar Condicionado Janela Springer Midea 7500 BTU/h",
+    "descricao": "Aproveite o ar geladinho para fugir do calor de Teresina",
+    "comDesc": 1779.00,
+    "semDesc": 2201.44
+  },
+
+  {
+    "id": 3,
+    "img": "https://m.media-amazon.com/images/I/41qM+itS5SL._AC_SL1080_.jpg",
+    "nome": "Fone de Ouvido JBL Tune 520BT - Preto",
+    "descricao": "Ouça na melhor qualidade que a JBL pode oferecer nesse fone",
+    "comDesc": 221.63,
+    "semDesc": 233.59
+  },
+    
+  {
+    "id": 4,
+    "img": "https://images-americanas.b2w.io/produtos/7261042313/imagens/travesseiro-58x38cm-viscoelastico-nasa-master-comfort/7261042321_1_xlarge.jpg",
+    "nome": "Travesseiro Nasa Master Comfort",
+    "descricao": "Conforto e maciez, sinta-se como se estivesse flutuando no espaço!",
+    "comDesc": 39.90,
+    "semDesc": 49.90
+  },  
+
+  {
+    "id": 5,
+    "img": "https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SL1000_.jpg",
+    "nome": "Echo Dot 5ª geração | Cor Preta ",
+    "descricao": "Aproveite suas músicas e aproveite as funções da Alexa",
+    "comDesc": 386.10,
+    "semDesc": 429.00
+  },
+    
+  {
+    "id": 6,
+    "img": "https://images-americanas.b2w.io/produtos/7420668040/imagens/conjunto-de-mesa-sala-de-jantar-miami-com-4-cadeiras-trieste-suede-1-20m-cedro-off-white-areia-dobue/7420668040_1_xlarge.jpg",
+    "nome": "Conjunto de Mesa Sala de Jantar com 4 Cadeiras",
+    "descricao": "Perfeito para compor sua casa e acomodar as visitas",
+    "comDesc": 859.00,
+    "semDesc": 1010.59
+  },
+    
+  {
+    "id": 7,
+    "img": "https://imgs.casasbahia.com.br/1562814055/1xg.jpg",
+    "nome": "Aspirador de Pó Vonde 127V 1200W",
+    "descricao": "Aspire todo tipo pó da sua casa e livre-se da sujeira!",
+    "comDesc": 289.90,
+    "semDesc": 349.00
+  },
+    
+  {
+    "id": 8,
+    "img": "https://down-br.img.susercontent.com/file/3bbc548ab9d719fcedc92aa465791169",
+    "nome": "Creatina Monohidratada Creapure Growth 250g",
+    "descricao": "Um dos suplementos mais populares do mercado",
+    "comDesc": 103.99,
+    "semDesc": 153.50
+  },
+    
+  {
+    "id": 9,
+    "img": "https://imgs.casasbahia.com.br/13658325/1xg.jpg",
+    "nome": "Rack Madetec Lisboa(136cm de Largura)",
+    "descricao": "Aguenta TV até 50 polegadas, apoie as coisas e mantenha sua casa organizada",
+    "comDesc": 299.00,
+    "semDesc": 379.00
+  },
+    
+  {
+    "id": 10,
+    "img": "https://imgs.casasbahia.com.br/55064345/1g.jpg",
+    "nome": "Lavadora de Roupas Brastemp - 13kg",
+    "descricao": "Lave suas roupas e deixa-as como novas!",
+    "comDesc": 1999.00,
+    "semDesc": 2329.00
+  },
+    
+  {
+    "id": 11,
+    "img": "https://cdn.newlooktime.com.br/media/catalog/product/cache/1/image/6984c3feca2e4514f6dbf5d03fa86be6/t/g/tg30014_1.jpg",
+    "nome": "Relógio Tuguir Digital TG125",
+    "descricao": "Veja as horas, um relógio prático, elegante e minimalista, além de resistente a água (5 ATM)",
+    "comDesc": 79.90,
+    "semDesc": 132.67
+  },
+    
+  {
+    "id": 12,
+    "img": "https://carrefourbr.vtexassets.com/arquivos/ids/123836535-1280-auto?v=638253647162870000&width=1280&height=auto&aspect=true",
+    "nome": "Tv Smart Philips 32″",
+    "descricao": "Com resolução HDR para assistir as novelas e filmes",
+    "comDesc": 2549.00,
+    "semDesc": 3649.00
+  }
+]
