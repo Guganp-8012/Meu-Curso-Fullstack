@@ -3,7 +3,7 @@ async function verDetalhes(){
   let produtos = await busca.json()
 
   let parametrosURL = new URLSearchParams(window.location.search)
-  let idProduto = parametrosURL.get("id")
+  let idProduto = parametrosURL.get("produtoid")
 
   let indice = null
 
@@ -24,11 +24,11 @@ async function verDetalhes(){
 
     <div class="valores">
       <span class="com-desc">
-        R$ ${(produtos[indice].comDesc).toFixed(2).replace(".", ",")}
+        R$ ${(produtos[indice].valorComDesconto).toFixed(2).replace(".", ",")}
       </span>
-      
+
       <span class="sem-desc">
-        R$ ${(produtos[indice].semDesc).toFixed(2).replace(".", ",")}
+        R$ ${(produtos[indice].valorSemDesconto).toFixed(2).replace(".", ",")}
       </span>
     </div>
   `

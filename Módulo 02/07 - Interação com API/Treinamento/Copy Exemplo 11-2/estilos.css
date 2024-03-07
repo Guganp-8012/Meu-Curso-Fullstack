@@ -1,0 +1,53 @@
+.lista-card{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card{
+  border: 1px solid #868686;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px #b7b7b7;
+  align-items: center;
+  cursor: pointer;
+}
+
+.grupo-img{
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+}
+
+.textos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.valores{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.com-desc{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.sem-desc{
+  color: red;
+  text-decoration: line-through;
+  font-size: 17px;
+}
