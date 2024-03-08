@@ -6,8 +6,8 @@ async function busca(){
 
   for (let produto of produtos){
     listaDiv.innerHTML += `
-    <div class="card">
-      <div class="grupo-img" data-id="${produto.id}">
+    <div class="card" data-id="${produto.id}">
+      <div class="grupo-img">
         <img src="${produto.img}" alt="nao renderizou" width="auto" height="auto">
       </div>
 
@@ -41,5 +41,6 @@ busca()
 
 function clique(){
   let elementoID = this.getAttribute("data-id")
+  alert(elementoID)
   window.location.href = "detalhes.html?produtoid=" + elementoID
 }

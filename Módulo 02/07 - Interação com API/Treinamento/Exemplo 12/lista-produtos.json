@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "img": "https://m.media-amazon.com/images/I/61urcYDAQ7L._AC_SL1000_.jpg",
+    "nome": "Fone de Ouvido KZ ZSN PRO",
+    "descricao": "Ótimo custo-benefício, ouça suas músicas e vídeos",
+    "valorSemDesconto": 96.80,
+    "valorComDesconto": 45.59
+  },
+
+  {
+    "id": 2,
+    "img": "https://m.media-amazon.com/images/I/71p9NTtFrzL._SL1500_.jpg",
+    "nome": "A República",
+    "descricao": "A obra mais traduzida, difundida, influente e estudada de Platão",
+    "valorSemDesconto": 89.00,
+    "valorComDesconto": 75.70
+  },
+  
+  {
+    "id": 3,
+    "img": "https://http2.mlstatic.com/D_NQ_NP_834151-MLB69407546139_052023-O.webp",
+    "nome": "PenDrive HP 2TB - Metal",
+    "descricao": "Leve e ideal para transportar todos os tipos de arquivos",
+    "valorSemDesconto": 87.90,
+    "valorComDesconto": 79.00
+  },
+  
+  {
+    "id": 4,
+    "img": "https://m.media-amazon.com/images/I/41IVtjpgH7L._AC_SL1000_.jpg",
+    "nome": "Fire TV Stick | Com Controle (inclui comandos de TV)",
+    "descricao": "Aproveite streaming rápido e em Full HD. Inclui Controle Remoto por Voz com Alexa",
+    "valorSemDesconto": 349.00,
+    "valorComDesconto": 314.10
+  },
+  
+  {
+    "id": 5,
+    "img": "https://m.media-amazon.com/images/I/81DHSGkblAL._AC_SL1500_.jpg",
+    "nome": "Ração Pedigree Para Cães Adultos Raças Pequenas 20Kg",
+    "descricao": "Alimente seu cachorro da melhor forma com a marca mais renomada",
+    "valorSemDesconto": 296.90,
+    "valorComDesconto": 286.19
+  },
+  
+  {
+    "id": 6,
+    "img": "https://m.media-amazon.com/images/I/61GhF+JUXGL._AC_SL1500_.jpg",
+    "nome": "VR Headset - Oculus Quest 2 | Snapdragon XR 256GB",
+    "descricao": "O sistema de RV tudo-em-um mais avançado até agora.",
+    "valorSemDesconto": 2770.77,
+    "valorComDesconto": 2561.31
+  },
+  
+  {
+    "id": 7,
+    "img": "https://m.media-amazon.com/images/I/51S5Jpy+-eL._AC_SL1000_.jpg",
+    "nome": "Enxaguante Bucal | Listerine",
+    "descricao": "Use o antisséptico bucal para alcançar onde a escova e o fio não chegam",
+    "valorSemDesconto": 28.39,
+    "valorComDesconto": 24.89
+  },
+  
+  {
+    "id": 8,
+    "img": "https://m.media-amazon.com/images/I/515JHT5anjL._AC_SL1000_.jpg",
+    "nome": "Assinatura Xbox Live Gold 12 Meses",
+    "descricao": "Ótimo custo-benefício, ouça suas músicas e vídeos",
+    "valorSemDesconto": 249.00,
+    "valorComDesconto": 239.50
+  },
+  
+  {
+    "id": 9,
+    "img": "https://m.media-amazon.com/images/I/81GJQSLI9kL._AC_SL1500_.jpg",
+    "nome": "Balança Digital de Cozinha (Até 10 Kg)",
+    "descricao": "Precisão para a pesagem de qualquer tipo de objeto ",
+    "valorSemDesconto": 50.00,
+    "valorComDesconto": 27.30
+  },
+    
+  {
+    "id": 10,
+    "img": "https://m.media-amazon.com/images/I/51darEYs+XL._AC_SL1000_.jpg",
+    "nome": "Tonéletce Vinho Tinto Francês 750Ml",
+    "descricao": "É um vinho frutado e fácil de beber que vai super bem com queijos e massas",
+    "valorSemDesconto": 51.90,
+    "valorComDesconto": 50.64
+  },
+    
+  {
+    "id": 11,
+    "img": "https://m.media-amazon.com/images/I/61qRhUYjG3L._AC_SL1500_.jpg",
+    "nome": "Kit Limpeza",
+    "descricao": "Toda a praticidade do Mop Giratório FIT, Agora com a opção 3 em 1",
+    "valorSemDesconto": 98.99,
+    "valorComDesconto": 92.99
+  },
+    
+  {
+    "id": 12,
+    "img": "https://m.media-amazon.com/images/I/81kTVgT-W5L._AC_SL1500_.jpg",
+    "nome": "UNO - Original",
+    "descricao": "O clássico jogo de cartas de combinar cores e números.  ",
+    "valorSemDesconto": 27.67,
+    "valorComDesconto": 20.00
+  }
+]
