@@ -51,3 +51,9 @@
   color: red;
   text-decoration: line-through;
 }
+
+.mini-img{
+  flex-direction: row;
+  column-gap: 10px;
+  display: flex;
+}

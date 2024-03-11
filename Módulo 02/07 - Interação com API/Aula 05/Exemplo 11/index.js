@@ -8,7 +8,7 @@ async function busca(){
     listaDiv.innerHTML += `
     <div class="card" data-id="${produto.id}">
       <div class="grupo-img">
-        <img src="${produto.img}" alt="não renderizou" width="auto" height="auto">
+        <img src="${produto.img[0]}" alt="não renderizou" width="auto" height="auto">
       </div>
       
       <div class="textos">
