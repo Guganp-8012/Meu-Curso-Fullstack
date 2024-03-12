@@ -52,6 +52,24 @@
   text-decoration: line-through;
 }
 
+.img-principal{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.minatura-frame{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #000;
+}
+
 .mini-img{
   flex-direction: row;
   column-gap: 10px;
