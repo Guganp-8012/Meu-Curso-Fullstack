@@ -23,9 +23,9 @@ ex.: background: #ffffff url("img_tree.png") no-repeat right top;
 
 
 Borders (bordas):
-As propriedades da borda CSS permitem especificar o estilo, a largura e a cor da borda de um elemento.
+As propriedades da borda permitem especificar o estilo, a largura e a cor da borda de um elemento.
 
-border-style - específica qual tipo de borda vai ser exibida
+border-style - Específica qual tipo de borda vai ser exibida
 dotted - pontilhada
 dashed - tracejada
 solid - sólido
@@ -40,13 +40,59 @@ hidden - oculta/escondida
 Também é possível definir mais de um tipo de borda ao mesmo tempo, "misturando-as"
 ex.: border-style: dotted dashed solid double
 
-border-width - específica a largura/grossura das bordas
-*você também pode definir um valor personalidado para cada borda se preferir
+border-width - Específica a largura/grossura das bordas
+*também pode definir um valor personalidado para cada borda se preferir
+
+border-color - Defini a cor das quatro bordas
+*também pode definir um valor personalidado para cada borda se preferir
+
+border - Lados Individuais
+Em CSS, também existem propriedades para especificar cada uma das bordas (superior, direita, inferior e esquerda)
+ex.:
+
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
 
 
+Border (propriedade abreviada)
+A propriedade border é uma propriedade abreviada para as seguintes propriedades de borda individuais:
+largura da borda; estilo de borda (obrigatório); Cor da borda.
+
+border-radius - é usado para adicionar bordas arredondadas a um elemento
+
+=============================================================================================
+
+Margin (Margem):
+As margens são usadas para criar espaço ao redor dos elementos, fora de quaisquer bordas definidas.
+
+margin - Lados Individuais:
+
+margin-top; margin-right; margin-bottom; margin-left
+
+---> (não sei como ajeitar essa parte)
+
+Todas as propriedades de margem podem ter os seguintes valores:
+
+    auto - o navegador calcula a margem
+    comprimento - especifica uma margem em px, pt, cm, etc.
+    % - especifica uma margem em% da largura do elemento que contém
+    herdar - especifica que a margem deve ser herdada do elemento pai
+Dica: Valores negativos são permitidos. <---
 
 
+Margin (propriedade abreviada)
+A propriedade margin é uma propriedade abreviada para as propriedades já citadas ()
+==============================================================================================
+Padding
 
+O preenchimento é usado para criar espaço ao redor do conteúdo de um elemento, dentro de quaisquer bordas definidas.
+
+==============================================================================================
+Height, Width and Max-width
 
 
 
@@ -93,6 +139,14 @@ px, re, etc
 
 valores de cores
 nome da cor / rgb / rgb-a, hex, hsl / hsl-a
+
+The color can be set by:
+
+    name - specify a color name, like "red"
+    HEX - specify a HEX value, like "#ff0000"
+    RGB - specify a RGB value, like "rgb(255,0,0)"
+    HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+    transparent
 
 
 Ordem de prioridade de sentido (?) => (sentido horário/cima-direita-baixo-esquerda)
