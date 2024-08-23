@@ -23,30 +23,27 @@
 
         <p>
             <label for="id_tipo">Tipo servico:</label>
-            <input type="text" name="tipo" maxlength="100" id="tipo">
+            <input type="text" name="tipo" maxlength="100" id="tipo" value="{{ servico.tipo }}">
         </p>
-            
-            
+        
         <p>
             <label for="valor">Valor servico:</label>
-            <input type="number" name="valor" step="0.01" id="valor">
+            <input type="number" name="valor" step="0.01" id="valor" value="{{ servico.valor }}">
         </p>
-            
-            
+               
         <p>
             <label for="id_empresa">Empresa:</label>
-            <select name="empresa" id="empresa">
+            <select name="empresa_id" id="empresa">
                 <option value="" selected=""></option>
                 {% for empresa in empresas %}
                     <option value="{{ empresa.id }}">{{ empresa.razao_social }}</option>
                 {% endfor %}
             </select>
         </p>
-            
-            
+              
         <p>
             <label for="id_categoria">Categoria:</label>
-            <select name="categoria" required="" id="categoria">
+            <select name="categoria_id" required="" id="categoria">
                 <option value="" selected=""></option>
                 {% for categoria in categorias %}
                     <option value="{{ categoria.id }}">{{ categoria.tipo }}</option>

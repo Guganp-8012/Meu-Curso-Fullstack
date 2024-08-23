@@ -520,7 +520,7 @@ def CriarServico(request):
     
         # Extraia a string desejada do JSON
         servicos = dados['servicos']
-        return render(request, "form-servico.html", {"categorias": categorias,"empresas": empresas, "servicos": servicos})
+        return render(request, "form-servico.html", {"categorias": categorias, "empresas": empresas, "servicos": servicos})
     else:
        # Dados que você deseja enviar no corpo da solicitação POST
         json = {
@@ -546,6 +546,8 @@ def CriarServico(request):
 def EditarServico(request, id_servico):
     url_editar_servico = 'http://127.0.0.1:9000/api/servicos/' + str(id_servico) # Substitua pela URL da API real
     url_listar_servicos = 'http://127.0.0.1:9000/api/servicos' # Substitua pela URL da API real
+    url_categorias = 'http://127.0.0.1:9000/api/categorias'
+    url_empresas = 'http://127.0.0.1:9000/api/empresas'
 
     obter_token = RetornaToken(request)
     conteudo_bytes = obter_token.content  # Obtém o conteúdo como bytes
@@ -562,13 +564,26 @@ def EditarServico(request, id_servico):
     dados = resposta.json()
     servico = dados['servico']
 
+    # Obter os dados do serviço
     resposta_servicos = requests.get(url_listar_servicos, headers=headers)
     resposta_servicos.raise_for_status()  # Levanta um erro para códigos de status HTTP 4xx/5xx
     dados_servicos = resposta_servicos.json() # Obtém os dados JSON da resposta
     servicos = dados_servicos['servicos']
 
+    # Obter categorias
+    resposta_categorias = requests.get(url_categorias, headers=headers)
+    resposta_categorias.raise_for_status()
+    dados_categorias = resposta_categorias.json()
+    categorias = dados_categorias['categorias']
+
+    # Obter empresas
+    resposta_empresas = requests.get(url_empresas, headers=headers)
+    resposta_empresas.raise_for_status()
+    dados_empresas = resposta_empresas.json()
+    empresas = dados_empresas['empresas']
+
     if request.method == "GET":
-        return render(request, "form-servico.html", {"servico": servico, 'servicos' : servicos}) 
+        return render(request, "form-servico.html", {"servico": servico, 'servicos' : servicos, "categorias": categorias, "empresas": empresas})
     else:
         # Dados que você deseja enviar no corpo da solicitação POST
         json = {
@@ -651,15 +666,14 @@ def CriarOrdemServico(request):
             return HttpResponse(f'Erro ao consumir a API: {str(e)}', status=500)
     
         # Extraia a string desejada do JSON
-        ordemServicos = dados['ordemServicos']
-        return render(request, "form-ordemservico.html", {"clientes": clientes, "servicos": servicos})
+        ordemServicos = dados['ordem_servicos']
+        return render(request, "form-ordemservico.html", {"clientes": clientes, "servicos": servicos, "ordem_servicos": ordemServicos})
     else:
        # Dados que você deseja enviar no corpo da solicitação POST
         json = {
-            'tipo': request.POST['tipo'],
-            'valor': request.POST['valor'],
-            'empresa_id': request.POST['empresa_id'],
-            'categoria_id': request.POST['categoria_id'],
+            'cliente_id': request.POST['cliente_id'],
+            'servico_id': request.POST['servico_id'],
+            'data': request.POST['data']
         }
                
         # Fazendo a solicitação POST
@@ -670,11 +684,13 @@ def CriarOrdemServico(request):
         if response.status_code in [200, 201]:
             try:
                 response_data = response.json()
-                return redirect("pg_criar_servico")
+                return redirect("pg_criar_ordemservico")
             except requests.JSONDecodeError:
                 print("A resposta não é um JSON válido.")
         else:
             return HttpResponse('Erro ao consumir a API: ', response.status_code)
+
+"""
 def ExcluirOrdemServico(request, id_ordemServico):
           url = 'http://127.0.0.1:9000/api/ordemServicos/' + str(id_ordemServico) # Substitua pela URL da API real
       
@@ -701,3 +717,4 @@ def ExcluirOrdemServico(request, id_ordemServico):
                       print("A resposta não é um JSON válido.")
               else:
                   return HttpResponse('Erro ao consumir a API: ', response.status_code)
+"""
