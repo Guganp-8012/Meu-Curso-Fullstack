@@ -1,0 +1,44 @@
+{% load static %}
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    </head>
+
+    <body>
+        <button>
+            <a href="{% url 'pagina_detalhes' %}">Detalhes</a>
+        </button>
+        
+        <ul>
+            <div class="lista-card">
+                {% for produto in produtos %}
+                        <div class="card">
+                            <div class="grupo-img">
+                                <img src="media/fotos_produtos/" alt="não renderizou" width="auto" height="auto">
+                            </div>
+                            
+                            <div class="textos">
+                                <h3>{{produto.nome_produto}}</h3>
+                              
+                                <p>{{produto.descricao}}</p>
+
+                                <div>
+                                  <span class="com-desc">
+                                      R$ {{produto.valor_com_desc}}
+                                  </span>
+                        
+                                  <span class="sem-desc">
+                                      R$ {{produto.valor_sem_desc}}
+                                  </span>
+                                </div>
+                            </div>
+                        </div>
+                {% endfor %}
+            </div>
+        </ul>
+    </body>
+</html>

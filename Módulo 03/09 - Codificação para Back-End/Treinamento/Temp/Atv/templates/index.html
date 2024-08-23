@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <button>
+            <a href="{% url 'pagina_cadastro' %}">Cadastro</a>
+        </button>
+
+        <h3>Lista de Celulares:</h3>
+        
+        <ul>
+            {% for celular in celulares %}
+                <li>{{celular.modelo}} - {{celular.ano_fabricacao}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html> 

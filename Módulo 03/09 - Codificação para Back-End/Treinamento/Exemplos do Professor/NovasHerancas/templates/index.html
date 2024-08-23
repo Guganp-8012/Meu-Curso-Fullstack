@@ -1,0 +1,17 @@
+<html>
+    <body>
+        {% block titulo %} 
+            <p>
+                Página Inicial
+            </p>
+        {% endblock %}
+
+        {% block conteudo %} 
+            <p>
+                Bem-vindo a Loja!
+            </p>
+        {% endblock %}
+
+        <a href="{% url 'pagina_login' %}">Página de Login</a>
+    </body>
+</html>

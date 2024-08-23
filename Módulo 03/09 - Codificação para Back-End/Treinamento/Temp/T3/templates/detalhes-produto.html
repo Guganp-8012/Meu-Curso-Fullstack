@@ -1,0 +1,19 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ produto.nome_produto }} | Detalhes</title>
+    </head>
+
+    <body>
+        <p>
+            Detalhes do Produto:
+        </p>
+
+        <p>
+            {{ produto.nome_produto }} - R$ {{ produto.valor_produto }}
+        </p>
+
+        <a href="{% url "pagina_index" %}">Voltar</a>
+    </body>
+</html>

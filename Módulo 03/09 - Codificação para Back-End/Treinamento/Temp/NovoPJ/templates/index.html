@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h3>Lista de Tarefas:</h3>
+
+        <a href="{% url 'pagina_cadastro' %}"><button>Cadastrar Tarefa</button></a>
+        
+        <ul>
+            {% for tarefa in tarefas %}
+                <li>{{tarefa.nome_tarefa}} - {{tarefa.responsavel}} | {{tarefa.estado}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html> 

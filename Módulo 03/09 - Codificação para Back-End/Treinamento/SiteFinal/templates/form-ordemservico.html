@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block titulo %}
+    <script src="{% static "js/validacoes_ordemservico.js" %}"></script>
+    <title>Formulário Ordem de Serviço</title>
+{% endblock %}
+
+{% block conteudo %}
+    <a href="{% url "pg_inicial" %}">
+        <button>Voltar</button>
+    </a>
+    <h2>Formulário Ordem de Serviço</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            <label for="cliente_id">Cliente:</label>
+            <select name="cliente_id" id="cliente">
+                <option value="" selected=""></option>
+                {% for cliente in clientes %}
+                    <option value="{{ cliente.id }}">{{ cliente.nome }}</option>
+                {% endfor %}
+            </select>
+        </p>
+
+        <p>
+            <label for="servico_id">Serviço:</label>
+            <select name="servico_id" id="servico_id">
+                <option value="" selected=""></option>
+                {% for servico in servicos %}
+                    <option value="{{ servico.id }}">{{ servico.nome }}</option>
+                {% endfor %}
+            </select>
+        </p>
+
+        <p>
+            <label for='tipo'>Data:</label>
+            <input type='date' name='tipo' maxlength='50' id='date'></input> 
+        </p>
+
+        <button type="submit" class="btn btn-primary">Salvar</button>
+
+        <a href="{% url "pg_inicial" %}">
+            <button type="button" class="btn btn-danger">Cancelar</button>
+        </a>
+    </form>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+
+    <body>
+        {% block titulo %} Lista de produtos: {% endblock %}
+
+        {% block conteudo %}
+            <ul>
+                <div class="lista-card">
+                    {% for produto in produtos %}
+                            <div class="card">
+                                <div class="grupo-img">
+                                    <img src="{% static 'placeholder-js.png' %}" alt="nao renderizou" width="auto" height="auto">
+                                </div>
+
+                                <div class="grupoValores">                                
+                                    <div class="textos">
+                                        <h3>{{produto.nome_produto}}</h3>
+                                    
+                                        <p>{{produto.descricao}}</p>
+
+                                        <div>
+                                        <span class="com-desc">
+                                            R$ {{produto.valor_com_desc}}
+                                        </span>
+                                
+                                        <span class="sem-desc">
+                                            R$ {{produto.valor_sem_desc}}
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="{% url 'detalhes-produto' produto.id %}">Ver produto</a>
+                            </div>
+                    {% endfor %}
+                </div>
+            </ul>
+
+            <button>
+                <a href="{% url 'pagina_login' %}">Login</a>
+            </button>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>Cadastro de Produto</h1>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ formulario.as_p }}
+            <button type="submit">Salvar</button>
+            <a href="{% url 'pg_inicial' %}"><button type="reset" onclick="resetForm()">Cancelar</button></a>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Formulário de Celular</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ formulario.as_p }}
+            <button type="submit">Salvar</button>
+            <button type="reset" onclick="resetForm()">Cancelar</button>
+        </form>
+
+        <button>
+            <a href="{% url 'pagina_index' %}">Voltar</a>
+        </button>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <h3>Lista de Tarefas:</h3>
+        
+        <ul>
+            {% for tarefa in tarefas %}
+                <li>{{tarefa.nome}} - {{tarefa.responsavel}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html> 
