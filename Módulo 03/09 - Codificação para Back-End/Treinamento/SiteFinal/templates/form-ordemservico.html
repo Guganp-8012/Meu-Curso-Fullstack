@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block titulo %}
-    <script src="{% static "js/validacoes_ordemservico.js" %}"></script>
+    <!--<script src="{% static "js/validacoes_ordemservico.js" %}"></script>-->
     <title>Formulário Ordem de Serviço</title>
 {% endblock %}
 
@@ -16,8 +16,8 @@
     <form method="post">
         {% csrf_token %}
         <p>
-            <label for="cliente_id">Cliente:</label>
-            <select name="cliente" id="cliente">
+            <label for="id_cliente">Cliente:</label>
+            <select name="cliente_id" id="cliente">
                 <option value="" selected=""></option>
                 {% for cliente in clientes %}
                     <option value="{{ cliente.id }}">{{ cliente.nome }}</option>
@@ -26,8 +26,8 @@
         </p>
 
         <p>
-            <label for="servico_id">Serviço:</label>
-            <select name="servico" id="servico">
+            <label for="id_servico">Serviço:</label>
+            <select name="servico_id" id="servico">
                 <option value="" selected=""></option>
                 {% for servico in servicos %}
                     <option value="{{ servico.id }}">{{ servico.nome }}</option>
@@ -36,13 +36,10 @@
         </p>
 
         <p>
-            <label for='data_id'>Data:</label>
-            <select name="data" id="data">
-                <option value="" selected=""></option>
-                {% for ordem_servico in ordem_servicos %}
-                    <option value="{{ ordem_servico.id }}">{{ ordem_servico.data_servico }}</option>
-                {% endfor %}
-            </select>
+            <p>
+                <label for="id_data">Foto:</label>
+                <input type="text" name="data_id" maxlength="100" required="" id="data" value="{{ cliente.data_servico }}"> 
+            </p>
         </p>
 
         <button type="submit" class="btn btn-primary">Salvar</button>

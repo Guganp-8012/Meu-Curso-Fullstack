@@ -25,6 +25,11 @@
             <input type="text" name="data_nascimento" maxlength="100" required="" id="data_nascimento" value="{{ cliente.data_nascimento }}"> 
         </p>
 
+        <p>
+            <label for="id_foto">Foto:</label>
+            <input type="text" name="foto" maxlength="100" required="" id="foto" value="{{ cliente.foto }}"> 
+        </p>
+
         <button type="submit" id="salvar" class="btn btn-primary">Salvar</button>
 
         <a href="{% url "pg_criar_servico" %}">

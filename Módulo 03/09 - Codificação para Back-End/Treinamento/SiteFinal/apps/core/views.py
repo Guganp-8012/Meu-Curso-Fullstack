@@ -630,7 +630,7 @@ def ExcluirServico(request, id_servico):
 
 
 def CriarOrdemServico(request): 
-    url = 'http://127.0.0.1:9000/api/ordemServicos' # Substitua pela URL da API real
+    url = 'http://127.0.0.1:9000/api/ordem_servicos' # Substitua pela URL da API real
     url_clientes = 'http://127.0.0.1:9000/api/clientes'
     url_servicos = 'http://127.0.0.1:9000/api/servicos'
 
@@ -656,7 +656,7 @@ def CriarOrdemServico(request):
    
     
     if request.method == "GET":
-        novo_servico = FormularioServico()
+        nova_ordemservico = FormularioOrdemServico()
 
         try:
             resposta = requests.get(url, headers=headers)
@@ -666,8 +666,8 @@ def CriarOrdemServico(request):
             return HttpResponse(f'Erro ao consumir a API: {str(e)}', status=500)
     
         # Extraia a string desejada do JSON
-        ordemServicos = dados['ordem_servicos']
-        return render(request, "form-ordemservico.html", {"clientes": clientes, "servicos": servicos, "ordem_servicos": ordemServicos})
+        ordem_servicos = dados['ordem_servicos']
+        return render(request, "form-ordemservico.html", {"clientes": clientes, "servicos": servicos, "ordem_servicos": ordem_servicos})
     else:
        # Dados que você deseja enviar no corpo da solicitação POST
         json = {
@@ -691,8 +691,8 @@ def CriarOrdemServico(request):
             return HttpResponse('Erro ao consumir a API: ', response.status_code)
 
 """
-def ExcluirOrdemServico(request, id_ordemServico):
-          url = 'http://127.0.0.1:9000/api/ordemServicos/' + str(id_ordemServico) # Substitua pela URL da API real
+def ExcluirOrdemServico(request, id_ordem_servico):
+          url = 'http://127.0.0.1:9000/api/ordem_servicos/' + str(id_ordem_servico) # Substitua pela URL da API real
       
           obter_token = RetornaToken(request)
           conteudo_bytes = obter_token.content  # Obtém o conteúdo como bytes
