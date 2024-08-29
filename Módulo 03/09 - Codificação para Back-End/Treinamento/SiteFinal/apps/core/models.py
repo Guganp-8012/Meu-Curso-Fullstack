@@ -3,7 +3,7 @@ from django.db import models
 class Cliente(models.Model):
     nome = models.CharField(max_length=100)
     data_nascimento = models.DateField()
-    foto = models.ImageField(upload_to="foto_perfil")
+    #foto = models.ImageField(upload_to="foto_perfil")
 
     def __str__(self):
         return self.nome
@@ -46,7 +46,9 @@ class Servico(models.Model):
 class OrdemServico(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
     servico = models.ManyToManyField(Servico)
-    data_servico = models.DateTimeField(auto_now_add=True)
+    data_inicio = models.DateTimeField(null=True)
+    data_finalizacao = models.DateTimeField(null=True)
+    status = models.BooleanField(default=False)
 
     def __str__(self):
         return "OS: " + self.id + " | " + self.cliente.nome

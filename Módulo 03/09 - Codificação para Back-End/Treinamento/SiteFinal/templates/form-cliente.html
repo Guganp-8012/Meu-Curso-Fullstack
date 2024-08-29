@@ -21,13 +21,17 @@
         </p>
 
         <p>
-            <label for="id_data_nascimento">Data de nascimento:</label>
-            <input type="text" name="data_nascimento" maxlength="100" required="" id="data_nascimento" value="{{ cliente.data_nascimento }}"> 
+            <label for="data_nascimento">Data de nascimento:</label>
+            <input type="date" name="data_nascimento" maxlength="100" required="" id="data_nascimento" value="{{ cliente.data_nascimento }}"> 
+        </p>
+
+        <p>
+            <label for="data_finalizacao">Data Finalização:</label>
+            <input type="date" name="data_finalizacao" id="data_finalizacao" value="{{ ordem_servico.data_finalizacao }}">
         </p>
 
         <p>
             <label for="id_foto">Foto:</label>
-            <input type="text" name="foto" maxlength="100" required="" id="foto" value="{{ cliente.foto }}"> 
         </p>
 
         <button type="submit" id="salvar" class="btn btn-primary">Salvar</button>

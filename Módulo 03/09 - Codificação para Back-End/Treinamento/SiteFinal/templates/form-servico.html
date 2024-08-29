@@ -34,19 +34,17 @@
         <p>
             <label for="id_empresa">Empresa:</label>
             <select name="empresa_id" id="empresa">
-                <option value="" selected=""></option>
                 {% for empresa in empresas %}
-                    <option value="{{ empresa.id }}">{{ empresa.razao_social }}</option>
+                    <option value="{{ servico.empresa.id }}" selected="{{ servico.empresa.id }}">{{ servico.empresa.razao_social }}</option>
                 {% endfor %}
             </select>
         </p>
               
         <p>
             <label for="id_categoria">Categoria:</label>
-            <select name="categoria_id" required="" id="categoria">
-                <option value="" selected=""></option>
+            <select name="categoria_id" id="categoria">
                 {% for categoria in categorias %}
-                    <option value="{{ categoria.id }}">{{ categoria.tipo }}</option>
+                    <option value="{{ servico.categoria.id }}" selected="{{ servico.categoria.id }}">{{ servico.categoria.tipo }}</option>
                 {% endfor %}
             </select>
         </p>
