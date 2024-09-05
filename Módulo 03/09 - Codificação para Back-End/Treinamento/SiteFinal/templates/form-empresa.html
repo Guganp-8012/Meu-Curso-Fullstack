@@ -24,6 +24,16 @@
             <input type="text" name="cnpj" maxlength="100" id="cnpj" value="{{ empresa.cnpj }}"> 
         </p>
 
+        <p>
+            <label for="id_endereco">Endereço:</label>
+            <input type="text" name="endereco" maxlength="100" id="endereco" value="{{ empresa.endereco }}"> 
+        </p>
+
+        <p>
+            <label for="id_celular">Telefone:</label>
+            <input type="text" name="celular" maxlength="100" id="celular" value="{{ empresa.celular }}"> 
+        </p>
+
         <button type="submit" id="salvar" class="btn btn-primary">Salvar</button>
 
         <a href="{% url "pg_criar_servico" %}"><button type="button" class="btn btn-danger">Cancelar</button></a>
@@ -37,6 +47,8 @@
                 <th scope="col">ID</th>
                 <th scope="col">Razão social</th>
                 <th scope="col">CNPJ</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">Telefone</th>
                 <th scope="col">Opções</th>
             </tr>
         </thead>
@@ -45,8 +57,10 @@
             {% for empresa in empresas %}
                 <tr>
                     <th scope="row">{{ empresa.id }}</th>
-                    <td>{{ empresa.razao_social }}</td>              
-                    <td>{{ empresa.cnpj }}</td>              
+                    <td>{{ empresa.razao_social }}</td>
+                    <td>{{ empresa.cnpj }}</td>
+                    <td>{{ empresa.endereco }}</td>
+                    <td>{{ empresa.celular }}</td>
                     <td>
                         <div class="btns_formulario">
                             <a href="{% url "pg_editar_empresa" empresa.id %}">

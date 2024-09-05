@@ -11,9 +11,10 @@
     <a href="{% url "pg_inicial" %}">
         <button>Voltar</button>
     </a>
+
     <h2>Formulário Cliente</h2>
 
-    <form method="post" id="form_cliente">
+    <form method="post" id="form_cliente" enctype="multipart/form-data">
         {% csrf_token %}
         <p>
             <label for="id_nome">Nome:</label>
@@ -26,12 +27,22 @@
         </p>
 
         <p>
-            <label for="data_finalizacao">Data Finalização:</label>
-            <input type="date" name="data_finalizacao" id="data_finalizacao" value="{{ ordem_servico.data_finalizacao }}">
+            <label for="id_cliente">Foto:</label>
+            <input type="file" name="foto">
         </p>
 
+        {% if cliente %}
         <p>
-            <label for="id_foto">Foto:</label>
+            <label for="status">Status:</label>
+            <select name="status" id="status">
+                <option value="1" {% if cliente.status == 1 %}selected{% endif %}>Ativo</option>
+                <option value="0" {% if cliente.status == 0 %}selected{% endif %}>Inativo</option>
+            </select>
+        </p>
+        {% endif %}
+
+        <p>
+            <img src="{{ foto }}"> 
         </p>
 
         <button type="submit" id="salvar" class="btn btn-primary">Salvar</button>
@@ -49,6 +60,8 @@
                 <th scope="col">ID</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Data de nascimento</th>
+                <th scope="col">Foto</th>
+                <th scope="col">Status</th>
                 <th scope="col">Opções</th>
             </tr>
         </thead>
@@ -58,7 +71,14 @@
                 <tr>
                     <th scope="row">{{ cliente.id }}</th>
                     <td>{{ cliente.nome }}</td>           
-                    <td>{{ cliente.data_nascimento }}</td>       
+                    <td>{{ cliente.data_nascimento }}</td>
+                    <td>{{ cliente.foto }}</td>
+                    <td>{% if cliente.status == 1 %}
+                        Ativo
+                    {% else %}
+                        Desativado
+                    {% endif %}
+                </td>  
                     <td>
                         <div class="btns_formulario">
                             <a href="{% url "pg_editar_cliente" cliente.id %}">

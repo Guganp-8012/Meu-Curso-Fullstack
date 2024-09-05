@@ -174,7 +174,9 @@ def CriarEmpresa(request):
     else:
         json = {
             'razao_social': request.POST['razao_social'],
-            'cnpj': request.POST['cnpj']
+            'cnpj': request.POST['cnpj'],
+            'endereco': request.POST['endereco'],
+            'celular': request.POST['celular']
         }
                 
         response = requests.post(url, json=json, headers=headers)
@@ -217,7 +219,9 @@ def EditarEmpresa(request, id_empresa):
         # Dados que você deseja enviar no corpo da solicitação POST
         json = {
             'razao_social': request.POST['razao_social'],
-            'cnpj': request.POST['cnpj']
+            'cnpj': request.POST['cnpj'],
+            'endereco': request.POST['endereco'],
+            'celular': request.POST['celular']
         }
                
         # Fazendo a solicitação POST
@@ -257,8 +261,7 @@ def ExcluirEmpresa(request, id_empresa):
 
 
 def CriarCliente(request):
-
-    url = 'http://127.0.0.1:9000/api/clientes' # Substitua pela URL da API real
+    url = 'http://127.0.0.1:9000/api/clientes'  # Substitua pela URL da API real
 
     obter_token = RetornaToken(request)
     conteudo_bytes = obter_token.content  # Obtém o conteúdo como bytes
@@ -267,42 +270,49 @@ def CriarCliente(request):
     # Cabeçalhos que você deseja enviar com a solicitação
     headers = {
         'Authorization': 'Bearer ' + token,
-        'Content-Type': 'application/json'
+        # 'Content-Type': 'application/json'
     }
     
     if request.method == "GET":
-        nova_cliente = FormularioCliente
         try:
             resposta = requests.get(url, headers=headers)
             resposta.raise_for_status()  # Levanta um erro para códigos de status HTTP 4xx/5xx
-            dados = resposta.json() # Obtém os dados JSON da resposta
+            dados = resposta.json()  # Obtém os dados JSON da resposta
         except requests.RequestException as e:
             return HttpResponse(f'Erro ao consumir a API: {str(e)}', status=500)
     
         # Extraia a string desejada do JSON
         clientes = dados['clientes']
-        return render(request, "form-cliente.html", {"form_cliente": nova_cliente, "clientes": clientes})
+        return render(request, "form-cliente.html", { "clientes": clientes })
     else:
         # Dados que você deseja enviar no corpo da solicitação POST
-        json = {
-            'nome': request.POST['nome'],
-            'data_nascimento': request.POST['data_nascimento'],
-            'foto': request.POST['foto'],
-        }
-                
-        # Fazendo a solicitação POST
-        response = requests.post(url, json=json, headers=headers)
+        foto = request.FILES.get('foto')
+        nome = request.POST['nome']
+        data_nascimento = request.POST['data_nascimento']
+        status = request.POST['status']
 
-        # Obtendo o conteúdo da resposta
+        # Preparando os dados para envio
+        files = {
+            'foto': (foto.name, foto, foto.content_type)
+        }
+        data = {
+            'nome': nome,
+            'data_nascimento': data_nascimento,
+            'status': status
+        }
+       
+        response = requests.post(url, data=data, files=files, headers=headers)
+
+        # return HttpResponse(response)
         
         if response.status_code in [200, 201]:
             try:
                 response_data = response.json()
                 return redirect("pg_criar_cliente")
             except requests.JSONDecodeError:
-                print("A resposta não é um JSON válido.")
+                return HttpResponse("A resposta não é um JSON válido.", status=500)
         else:
-            return HttpResponse('Erro ao consumir a API: ', response.status_code)
+            return HttpResponse(f'Erro na solicitação: {response.status_code}', status=response.status_code)
 def EditarCliente(request, id_cliente):
     url_editar_cliente = 'http://127.0.0.1:9000/api/clientes/' + str(id_cliente) # Substitua pela URL da API real
     url_listar_clientes = 'http://127.0.0.1:9000/api/clientes' # Substitua pela URL da API real
@@ -331,14 +341,23 @@ def EditarCliente(request, id_cliente):
         return render(request, "form-cliente.html", {"cliente": cliente, 'clientes' : clientes}) 
     else:
         # Dados que você deseja enviar no corpo da solicitação POST
-        json = {
-            'nome': request.POST['nome'],
-            'data_nascimento': request.POST['data_nascimento'],
-            'foto': request.POST['foto'],
+        foto = request.FILES.get('foto')
+        nome = request.POST['nome']
+        data_nascimento = request.POST['data_nascimento']
+        status = request.POST['status']
+
+        # Preparando os dados para envio
+        files = {
+            'foto': (foto.name, foto, foto.content_type)
+        }
+        data = {
+            'nome': nome,
+            'data_nascimento': data_nascimento,
+            'status': status
         }
                
         # Fazendo a solicitação POST
-        response = requests.put(url_editar_cliente, json=json, headers=headers)
+        response = requests.put(url_editar_cliente, data=data, files=files, headers=headers)
 
         # Obtendo o conteúdo da resposta
         
